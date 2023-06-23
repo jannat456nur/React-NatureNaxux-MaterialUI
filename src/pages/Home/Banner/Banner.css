@@ -39,7 +39,10 @@ body {
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
-  background-image: url(../../../img/african-leopard-female-pose-beautiful-evening-light.jpg);
+  background-image: 
+    url(../../../img/african-leopard-female-pose-beautiful-evening-light.jpg);
+  /* background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)),
+    url(../../../img/african-leopard-female-pose-beautiful-evening-light.jpg); */
 }
 .parallax-bg-2 {
   position: absolute;
@@ -50,7 +53,10 @@ body {
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
-  background-image: url(../../../img/male-female-lions-laying-sand-resting.jpg);
+  background-image: 
+    url(../../../img/male-female-lions-laying-sand-resting.jpg);
+  /* background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)),
+    url(../../../img/male-female-lions-laying-sand-resting.jpg); */
 }
 .parallax-bg-3 {
   position: absolute;
@@ -61,12 +67,16 @@ body {
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
-  background-image: url(../../../img/shot-two-cute-tall-giraffes-safari-south-africa.jpg);
+  background-image: 
+    url(../../../img/shot-two-cute-tall-giraffes-safari-south-africa.jpg);
+  /* background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)),
+    url(../../../img/shot-two-cute-tall-giraffes-safari-south-africa.jpg); */
 }
 
 .swiper-slide .title {
-  font-size: 41px;
-  font-weight: 300;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-top: 5rem;
 }
 
 .swiper-slide .subtitle {
@@ -77,4 +87,5 @@ body {
   font-size: 14px;
   max-width: 400px;
   line-height: 1.3;
+  text-align: center;
 }

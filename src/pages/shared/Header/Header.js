@@ -14,6 +14,7 @@ import MenuIcon from '@mui/icons-material/Menu'
 import ImportContactsIcon from '@mui/icons-material/ImportContacts'
 import { Menu } from '@mui/material'
 import { NavLink } from 'react-router-dom'
+import logo from '../../../img/logo.png'
 
 export default function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null)
@@ -33,7 +34,7 @@ export default function Header() {
   }, []);
 
   const navbarStyle = {
-    backgroundColor: isScrolled ? 'rgba(255, 255, 255, 0.8)' : 'transparent',
+    backgroundColor: isScrolled ? 'rgba(4, 9, 30, 0.7)' : 'rgba(4, 9, 30, 0.7)',
     backdropFilter: isScrolled ? 'blur(20px)' : 'none',
     boxShadow: isScrolled ? '0 0 10px rgba(0, 0, 0, 0.2)' : 'none',
     
@@ -69,12 +70,14 @@ export default function Header() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* icon for large screen */}
+
+          <img src={logo} className='logo'/>
           {/* //book icon */}
-          <ImportContactsIcon
+          {/* <ImportContactsIcon
             sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, color: 'black' }}
-          />
+          /> */}
           {/* logo for large screen */}
-          <Typography
+          {/* <Typography
             variant="h6"
             noWrap
             component="a"
@@ -91,7 +94,7 @@ export default function Header() {
             }}
           >
             myLibrary
-          </Typography>
+          </Typography> */}
           {/* pages for small screen */}
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -322,9 +325,9 @@ export default function Header() {
               style={({ isActive }) =>
                 isActive
                   ? {
-                      color: 'black',
+                      color: '#f8bf02',
                     }
-                  : { color: 'black' }
+                  : { color: 'white' }
               }
               to="/"
               className="headerLink"
@@ -335,10 +338,10 @@ export default function Header() {
             <NavLink
               style={({ isActive }) =>
                 isActive
-                  ? {
-                      color: 'black',
+                 ? {
+                      color: '#f8bf02',
                     }
-                  : { color: 'black' }
+                  : { color: 'white' }
               }
               to="/books"
               className="headerLink"
@@ -348,10 +351,10 @@ export default function Header() {
             <NavLink
               style={({ isActive }) =>
                 isActive
-                  ? {
-                      color: 'black',
+                 ? {
+                      color: '#f8bf02',
                     }
-                  : { color: 'black' }
+                  : { color: 'white' }
               }
               to="/feedback"
               className="headerLink"
@@ -361,10 +364,10 @@ export default function Header() {
             <NavLink
               style={({ isActive }) =>
                 isActive
-                  ? {
-                      color: 'black',
+                 ? {
+                      color: '#f8bf02',
                     }
-                  : { color: 'black' }
+                  : { color: 'white' }
               }
               to="/contact"
               className="headerLink"
@@ -375,9 +378,9 @@ export default function Header() {
               style={({ isActive }) =>
                 isActive
                   ? {
-                      color: 'black',
+                      color: '#f8bf02',
                     }
-                 : { color: 'black' }
+                  : { color: 'white' }
               }
               to="/signup"
               className="headerLink"
@@ -388,10 +391,10 @@ export default function Header() {
             <NavLink
               style={({ isActive }) =>
                 isActive
-                  ? {
-                      color: 'black',
+                 ? {
+                      color: '#f8bf02',
                     }
-                  : { color: '#fff' }
+                  : { color: 'white' }
               }
               to="/signin"
               className="headerLink"
@@ -402,10 +405,10 @@ export default function Header() {
             <NavLink
               style={({ isActive }) =>
                 isActive
-                  ? {
-                      color: 'black',
+               ? {
+                      color: '#f8bf02',
                     }
-                  : { color: '#fff' }
+                  : { color: 'white' }
               }
               to="/signin"
               className="headerLink"
