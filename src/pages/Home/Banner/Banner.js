@@ -27,7 +27,7 @@ export default function App() {
         }}
         navigation={true}
         modules={[Parallax, Pagination, Navigation]}
-        className="mySwiper"
+        className="banner-swiper"
       >
         <div
           slot="container-start"

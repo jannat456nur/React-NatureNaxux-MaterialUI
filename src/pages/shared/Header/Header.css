@@ -2,6 +2,14 @@
   width: 100px;
   height: 100px;
 }
+.navbar {
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  transition: backdrop-filter 0.3s; /* Add transition for smooth effect */
+}
+
+.navbar.transparent {
+  backdrop-filter: none; /* Remove blur effect when not scrolling */
+}
 .headerLink {
   color: #fff;
   text-decoration: none;
@@ -23,14 +31,6 @@
   font-size: 1.2rem;
   font-weight: 600;
   margin-right: 20px;
-}
-.navbar {
-  backdrop-filter: blur(10px); /* Apply blur effect */
-  transition: backdrop-filter 0.3s; /* Add transition for smooth effect */
-}
-
-.navbar.transparent {
-  backdrop-filter: none; /* Remove blur effect when not scrolling */
 }
 
 @media screen and (max-width: 768px) {
