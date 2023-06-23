@@ -39,7 +39,16 @@ export default function App() {
           data-swiper-parallax="-23%"
         ></div>
        
-        <SwiperSlide>
+        <SwiperSlide className="slider">
+             <div
+          slot="container-start"
+          className="parallax-bg"
+        //   style={{
+        //     "background-image":
+        //       "url(../../../../../img/african-leopard-female-pose-beautiful-evening-light.jpg)",
+        //   }}
+          data-swiper-parallax="-23%"
+        ></div>
           <div className="title" data-swiper-parallax="-300">
             Slide 1
           </div>
@@ -59,6 +68,15 @@ export default function App() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
+             <div
+          slot="container-start"
+          className="parallax-bg-2"
+        //   style={{
+        //     "background-image":
+        //       "url(../../../../../img/african-leopard-female-pose-beautiful-evening-light.jpg)",
+        //   }}
+          data-swiper-parallax="-23%"
+        ></div>
           <div className="title" data-swiper-parallax="-300">
             Slide 2
           </div>
@@ -78,6 +96,15 @@ export default function App() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
+             <div
+          slot="container-start"
+          className="parallax-bg-3"
+        //   style={{
+        //     "background-image":
+        //       "url(../../../../../img/african-leopard-female-pose-beautiful-evening-light.jpg)",
+        //   }}
+          data-swiper-parallax="-23%"
+        ></div>
           <div className="title" data-swiper-parallax="-300">
             Slide 3
           </div>

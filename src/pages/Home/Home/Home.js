@@ -6,8 +6,8 @@ import Banner from '../Banner/Banner'
 const Home = () => {
   return (
     <div>
-      <Hero></Hero>
-      dfhfgh
+      {/* <Hero></Hero> */}
+   
       <Banner></Banner>
       <Gallery></Gallery>
     </div>
