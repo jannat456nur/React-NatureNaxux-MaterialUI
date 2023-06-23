@@ -7,6 +7,7 @@ import CardActions from '@mui/material/CardActions'
 import CardContent from '@mui/material/CardContent'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
 export default function Hww() {
   return (
@@ -73,7 +74,7 @@ export default function Hww() {
                       ml: 5,
                     }}
                   >
-                    Learn More
+                    Learn More <ChevronRightIcon />
                   </Button>
                 </CardActions>
               </Card>
