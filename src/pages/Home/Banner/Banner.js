@@ -1,24 +1,24 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState } from 'react'
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/navigation'
 
-import "./Banner.css";
+import './Banner.css'
 
 // import required modules
-import { Parallax, Pagination, Navigation } from "swiper";
+import { Parallax, Pagination, Navigation } from 'swiper'
 
 export default function App() {
   return (
     <>
       <Swiper
         style={{
-          "--swiper-navigation-color": "#fff",
-          "--swiper-pagination-color": "#fff",
+          '--swiper-navigation-color': '#fff',
+          '--swiper-pagination-color': '#fff',
         }}
         speed={600}
         parallax={true}
@@ -32,98 +32,66 @@ export default function App() {
         <div
           slot="container-start"
           className="parallax-bg"
-        //   style={{
-        //     "background-image":
-        //       "url(../../../../../img/african-leopard-female-pose-beautiful-evening-light.jpg)",
-        //   }}
           data-swiper-parallax="-23%"
         ></div>
-       
+
+        {/* 1st slide */}
+
         <SwiperSlide className="slider">
-             <div
-          slot="container-start"
-          className="parallax-bg"
-        //   style={{
-        //     "background-image":
-        //       "url(../../../../../img/african-leopard-female-pose-beautiful-evening-light.jpg)",
-        //   }}
-          data-swiper-parallax="-23%"
-        ></div>
+          <div
+            slot="container-start"
+            className="parallax-bg"
+            data-swiper-parallax="-23%"
+          ></div>
+
+          <div className="btn-div" data-swiper-parallax="-200">
+            <button className="banner-btn"> Welcome to NatureNexus</button>
+          </div>
           <div className="title" data-swiper-parallax="-300">
-            Slide 1
+            Delicious Food Selection <br></br>
+            <span className="span">Farm Fresh!</span>
           </div>
-          <div className="subtitle" data-swiper-parallax="-200">
-            Subtitle
-          </div>
-          <div className="text" data-swiper-parallax="-100">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-              laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-              Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-              tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-            </p>
+          <div className="btn-div-2" data-swiper-parallax="-200">
+            <button className="banner-btn-2"> Explore Now !</button>
           </div>
         </SwiperSlide>
+        {/* second slide */}
         <SwiperSlide>
-             <div
-          slot="container-start"
-          className="parallax-bg-2"
-        //   style={{
-        //     "background-image":
-        //       "url(../../../../../img/african-leopard-female-pose-beautiful-evening-light.jpg)",
-        //   }}
-          data-swiper-parallax="-23%"
-        ></div>
+          <div
+            slot="container-start"
+            className="parallax-bg-2"
+            data-swiper-parallax="-23%"
+          ></div>
+          <div className="btn-div" data-swiper-parallax="-200">
+            <button className="banner-btn"> Welcome to NatureNexus</button>
+          </div>
           <div className="title" data-swiper-parallax="-300">
-            Slide 2
+            Explore and Protect <br></br>
+            <span className="span"> Wild Life!</span>
           </div>
-          <div className="subtitle" data-swiper-parallax="-200">
-            Subtitle
-          </div>
-          <div className="text" data-swiper-parallax="-100">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-              laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-              Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-              tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-            </p>
+          <div className="btn-div-2" data-swiper-parallax="-200">
+            <button className="banner-btn-2"> Explore Now !</button>
           </div>
         </SwiperSlide>
+        {/* third slide */}
         <SwiperSlide>
-             <div
-          slot="container-start"
-          className="parallax-bg-3"
-        //   style={{
-        //     "background-image":
-        //       "url(../../../../../img/african-leopard-female-pose-beautiful-evening-light.jpg)",
-        //   }}
-          data-swiper-parallax="-23%"
-        ></div>
+          <div
+            slot="container-start"
+            className="parallax-bg-3"
+            data-swiper-parallax="-23%"
+          ></div>
+          <div className="btn-div" data-swiper-parallax="-200">
+            <button className="banner-btn"> Welcome to NatureNexus</button>
+          </div>
           <div className="title" data-swiper-parallax="-300">
-            Slide 3
+            Tree Plantation Services <br></br>{' '}
+            <span className="span">Green Future !</span>
           </div>
-          <div className="subtitle" data-swiper-parallax="-200">
-            Subtitle
-          </div>
-          <div className="text" data-swiper-parallax="-100">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-              laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-              Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-              tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-            </p>
+          <div className="btn-div-2" data-swiper-parallax="-200">
+            <button className="banner-btn-2"> Explore Now !</button>
           </div>
         </SwiperSlide>
       </Swiper>
     </>
-  );
+  )
 }

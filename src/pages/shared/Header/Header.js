@@ -62,9 +62,7 @@ export default function Header() {
       
       style={{
         ...navbarStyle,
-        // backgroundColor: '#fff',
-        // background: 'transparent',
-        // boxShadow: 'none',
+       
       }}
     >
       <Container maxWidth="xl">
@@ -72,29 +70,7 @@ export default function Header() {
           {/* icon for large screen */}
 
           <img src={logo} className='logo'/>
-          {/* //book icon */}
-          {/* <ImportContactsIcon
-            sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, color: 'black' }}
-          /> */}
-          {/* logo for large screen */}
-          {/* <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-              color: 'black',
-            }}
-          >
-            myLibrary
-          </Typography> */}
+         
           {/* pages for small screen */}
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -171,7 +147,7 @@ export default function Header() {
                   to="/books"
                   className="headerLink"
                 >
-                  Books
+                  Services
                 </NavLink>
               </Button>
 
@@ -194,7 +170,7 @@ export default function Header() {
                   to="/feedback"
                   className="headerLink"
                 >
-                  Feedback
+                Gallery
                 </NavLink>
               </Button>
               <Button
@@ -216,7 +192,7 @@ export default function Header() {
                   to="/contact"
                   className="headerLink"
                 >
-                  Contact
+                  Contact Us
                 </NavLink>
               </Button>
               <Button
@@ -242,7 +218,7 @@ export default function Header() {
                 </NavLink>
               </Button>
 
-              <Button
+              {/* <Button
                 sx={{
                   fontSize: 18,
                   display: 'block',
@@ -263,9 +239,9 @@ export default function Header() {
                 >
                   SignOut
                 </NavLink>
-              </Button>
+              </Button> */}
 
-              <Button
+              {/* <Button
                 sx={{
                   fontSize: 18,
                   display: 'block',
@@ -286,33 +262,14 @@ export default function Header() {
                 >
                   SignIn
                 </NavLink>
-              </Button>
+              </Button> */}
             </Menu>
           </Box>
           {/* icon for small screen */}
-          <ImportContactsIcon
-            sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }}
-          />
+         
 
           {/* logo for small screen */}
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            myLibrary
-          </Typography>
+         
           {/* pages for large screen */}
           <Box
             sx={{
@@ -346,7 +303,7 @@ export default function Header() {
               to="/books"
               className="headerLink"
             >
-              Books
+             Services
             </NavLink>
             <NavLink
               style={({ isActive }) =>
@@ -359,7 +316,7 @@ export default function Header() {
               to="/feedback"
               className="headerLink"
             >
-              Feedback
+             Blog
             </NavLink>
             <NavLink
               style={({ isActive }) =>
@@ -372,7 +329,7 @@ export default function Header() {
               to="/contact"
               className="headerLink"
             >
-              Contact
+              Contact Us
             </NavLink>
             <NavLink
               style={({ isActive }) =>
@@ -388,7 +345,7 @@ export default function Header() {
               SignUp
             </NavLink>
 
-            <NavLink
+            {/* <NavLink
               style={({ isActive }) =>
                 isActive
                  ? {
@@ -400,8 +357,8 @@ export default function Header() {
               className="headerLink"
             >
               SignOut
-            </NavLink>
-
+            </NavLink> */}
+{/* 
             <NavLink
               style={({ isActive }) =>
                 isActive
@@ -414,7 +371,7 @@ export default function Header() {
               className="headerLink"
             >
               SignIn
-            </NavLink>
+            </NavLink> */}
           </Box>
           {/* user menu */}
 
