@@ -1,7 +1,10 @@
 .App {
   text-align: center;
+  overflow-x: hidden;
 }
-
+body {
+  /* padding-top: 15rem; */
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
