@@ -14,8 +14,10 @@ import { Pagination } from 'swiper'
 export default function Gallery2() {
   return (
     <div>
-        <p className='gallery-mini-title'>NatureNexus Tour!</p>
-         <p className='gallery-title'>Discover Animal <span className='span'>Way!</span></p>
+      <p className="gallery-mini-title">NatureNexus Tour!</p>
+      <p className="gallery-title">
+        Discover Animal <span className="span">Way!</span>
+      </p>
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
@@ -39,7 +41,6 @@ export default function Gallery2() {
         modules={[Pagination]}
         className="gallery-swiper"
       >
-       
         <SwiperSlide>
           {' '}
           <div

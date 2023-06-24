@@ -364,9 +364,9 @@ export default function Header() {
                 fontWeight: 'bold',
                 fontFamily: 'times new roman',
                 fontSize: 16,
-                textAlign: 'center',
+                // textAlign: 'center',
 
-                color: 'white',
+                // color: 'white',
                 marginTop: '-10px',
                 marginLeft: '-12px',
                 marginRight: '12px',
@@ -388,6 +388,7 @@ export default function Header() {
                   horizontal: 'left',
                 }}
               >
+                {/* first service */}
                 <MenuItem onClick={handleCloseServicesMenu}>
                   <NavLink
                     style={({ isActive }) =>
@@ -404,12 +405,12 @@ export default function Header() {
                           }
                     }
                     exact
-                    to="/service1"
+                    to="/freshfarm"
                   >
-                    Service 1
+                    Fresh Farm
                   </NavLink>
                 </MenuItem>
-
+                {/* second service */}
                 <MenuItem onClick={handleCloseServicesMenu}>
                   <NavLink
                     style={({ isActive }) =>
@@ -428,10 +429,10 @@ export default function Header() {
                     exact
                     to="/service2"
                   >
-                    Service 2
+                    Wild Life
                   </NavLink>
                 </MenuItem>
-
+                {/* third service */}
                 <MenuItem onClick={handleCloseServicesMenu}>
                   <NavLink
                     style={({ isActive }) =>
@@ -450,7 +451,7 @@ export default function Header() {
                     exact
                     to="/service2"
                   >
-                    Service 3
+                    Tree Plant
                   </NavLink>
                 </MenuItem>
               </Menu>
@@ -461,7 +462,6 @@ export default function Header() {
                   ? {
                       color: '#f8bf02',
                       fontFamily: 'times new roman',
-
                     }
                   : { color: 'white', fontFamily: 'times new roman ' }
               }
