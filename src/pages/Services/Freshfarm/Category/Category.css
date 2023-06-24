@@ -73,6 +73,7 @@ body {
 .myCategorySwiper {
   width: 100%;
   max-width: 1350px;
+  margin-bottom: 5rem;
 }
 .category-swiper-slide {
   height: 230px;
